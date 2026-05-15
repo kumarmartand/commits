@@ -24,4 +24,5 @@ jobs:
           echo "$(date '+%Y-%m-%d %H:%M:%S IST') -- daily commit" >> log.md
           git add log.md
           git commit -m "chore: daily activity commit [$(date '+%Y-%m-%d')]"
+          git pull --rebase origin main
           git push
